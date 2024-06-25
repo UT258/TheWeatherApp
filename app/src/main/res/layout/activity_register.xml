@@ -39,7 +39,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="register"
-        android:backgroundTint="@color/primaryColor"
+        android:backgroundTint="#3A2C28"
         android:textColor="@android:color/white"
         android:padding="12dp"
         android:textAllCaps="false"
