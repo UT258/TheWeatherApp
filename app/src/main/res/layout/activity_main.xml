@@ -4,8 +4,7 @@
     android:id="@+id/rootView"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.MainActivity"
-    android:background="@drawable/clear_sky"
-    >
+    android:background="@drawable/clear_sky">
 
     <data>
         <variable
@@ -20,83 +19,72 @@
 
         <EditText
             android:id="@+id/cityEditText"
-            android:layout_width="248dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="19dp"
-            android:hint="Enter city name" />
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Enter city name"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/getWeatherButton"
-            android:layout_width="138dp"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/cityEditText"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="-60dp"
-            android:layout_marginEnd="0dp"
-            android:layout_toEndOf="@+id/cityEditText"
-            android:text="Get Weather" />
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3A2C28"
+            android:text="Get Weather"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityEditText" />
 
         <TextView
             android:id="@+id/weatherTextView"
-            android:layout_width="299dp"
-            android:layout_height="100dp"
-            android:layout_below="@+id/cityEditText"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="63dp"
-            android:layout_marginTop="228dp"
-            android:layout_marginEnd="65dp"
-            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getWeatherButton"
+            android:layout_marginTop="24dp"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/getWeatherButton" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="265dp"
-            android:layout_height="119dp"
-            android:layout_below="@+id/getWeatherButton"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="57dp"
-            android:layout_marginTop="59dp"
-            android:layout_marginEnd="73dp"
-            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherTextView"
+            android:layout_marginTop="16dp"
             android:textColor="#000000"
-            android:textSize="48sp"
-            android:textStyle="bold" />
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weatherTextView" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="300dp"
-            android:layout_height="104dp"
-            android:layout_below="@+id/weatherTextView"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="53dp"
-            android:layout_marginEnd="64dp"
-            android:layout_marginBottom="184dp"
-            android:fontFamily="sans-serif"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            tools:visibility="visible" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/forecastRecyclerView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/textView"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:padding="8dp" />
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
 
     </RelativeLayout>
 </layout>

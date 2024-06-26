@@ -16,7 +16,7 @@ import retrofit2.Response;
 
 public class WeatherViewModel extends ViewModel {
     private MutableLiveData<WeatherResponse> weatherData;
-    private static final String API_KEY = "a48e676ad71137b6cf39ca831907c788"; // Replace with your OpenWeatherMap API key
+    private static final String API_KEY = "a48e676ad71137b6cf39ca831907c788";
 
     public LiveData<WeatherResponse> getWeatherData() {
         if (weatherData == null) {

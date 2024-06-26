@@ -46,6 +46,9 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
     implementation ("com.google.code.gson:gson:2.9.0")
+    implementation ("com.google.android.gms:play-services-auth:20.2.0")
+    implementation ("com.google.firebase:firebase-auth:21.3.0")
+
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.auth)
     testImplementation(libs.junit)
